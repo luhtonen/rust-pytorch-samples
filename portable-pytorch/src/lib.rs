@@ -1,7 +1,6 @@
+use tract_onnx::prelude::*;
+use ndarray::Array;
 use tract_onnx::prelude::DatumExt;
-use tract_ndarray::Array;
-use tract_ndarray::prelude::*
-
 
 //accepts image as input string
 pub fn export(imagepath: String) -> Result<(), Box<dyn std::error::Error>> {

@@ -23,7 +23,7 @@ fn main() {
     match args.command {
         Some(Commands::Train { path }) => {
             println!("Training MNIST on GPU");
-            mnist_cli_gpu::run(&path);
+            mnist_cli_gpu::run(&path).ok();
         }
         None => println!("No command was used"),
     }
